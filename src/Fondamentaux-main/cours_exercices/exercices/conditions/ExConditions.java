@@ -1,5 +1,5 @@
 /*
- * Exercice conditions
+ * Exercice conditions bip bop bop
  * 
  * 1. Chercher le plus grand des 3 nombres saisie par l'utilisateur
  * 2. Afficher sur les nombres saisie sont pairs ou impairs
