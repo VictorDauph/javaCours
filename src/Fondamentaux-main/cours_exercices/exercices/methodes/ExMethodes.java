@@ -37,13 +37,12 @@ public class ExMethodes {
 
     // Méthode volume
     public double volume(int r){
-        return 4/3*3.14*cube(r);
+        return 4.0/3.0*3.14*cube(r);
     }
 
     // Méthode principale
     public static void main(String[] args) {
         ExMethodes m = new ExMethodes();
-        
         System.out.println(m.Max(1,2,2));
         System.out.println(m.cube(2));
         System.out.println(m.volume(3));
