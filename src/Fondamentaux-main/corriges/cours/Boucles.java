@@ -2,56 +2,55 @@
  * Exemple sur les boucles, continue et break
  */
 
-package cours_exercices.cours;
+package corriges.cours;
 
 // Classe principale
 public class Boucles {
     public static void main(String[] args) {
 	// Boucle for
-        System.out.println("for");
-	for (int cpt=0; cpt<3; cpt++){
+	for (int cpt = 0; cpt < 5; cpt++) {
             System.out.println(cpt);
-        }
+	}
+		
 	// Saut de ligne
-        System.out.println("do while");
+	System.out.println();
+	
 	// Boucle do ... while
-        int cpt=0;
-        
-        do{
+	int cpt = 0;
+	
+	do {
             System.out.println(cpt);
             cpt++;
-        }
-        while(cpt <10);
+	}
+        while (cpt < 10);
+        
         // Saut de ligne
-        System.out.println("while");
+        System.out.println();
+        
         // Boucle while
-        while(cpt !=0){
+        while (cpt != 0) {
             // utilisation de continue
-            if(cpt<8 && cpt>5){
-                cpt--;
+            if (cpt == 8) {
+                cpt --;
                 continue;
             }
+
             System.out.println(cpt);
             cpt--;
+
             // Utilisation de break
-            if(cpt==3){
-                System.out.println(cpt);
+            if (cpt == 3) {
                 break;
             }
         }
-            
-
-            
 	
         // Saut de ligne
-	System.out.println("boucle intelligente");
-        
+        System.out.println();
+        int[] liste = {1, 2, 3};
+	
         // Boucle "intelligente"
-        Integer[] liste = {1,2,3};
-        
-        for (int element: liste){
-            System.out.println(element+getIndex);
-            
+        for (int element : liste) {
+            System.out.println(element);
         }
     }
 }
