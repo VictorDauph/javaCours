@@ -16,7 +16,7 @@ package cours_exercices.exercices.methodes;
 
 public class ExMethodes {
     // Méthode maximum
-    public int Max(int a,int b,int c){
+    public Integer Max(int a,int b,int c){
         if(a>b && a>c){
            return a;
         }
@@ -26,7 +26,7 @@ public class ExMethodes {
         else if(c>a && c>b){
             return c;
         }else{
-        return -1;
+            return null;
         }
     }
     
