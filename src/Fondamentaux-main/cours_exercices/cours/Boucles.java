@@ -50,7 +50,7 @@ public class Boucles {
         Integer[] liste = {1,2,3};
         
         for (int element: liste){
-            System.out.println(element+getIndex);
+            System.out.println(element);
             
         }
     }
