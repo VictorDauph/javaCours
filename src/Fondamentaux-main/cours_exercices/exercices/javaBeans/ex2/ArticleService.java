@@ -8,5 +8,13 @@
 
 package cours_exercices.exercices.javaBeans.ex2;
 
+// Import de Serializable pour créer un JavaBean
+import java.io.Serializable;
+
 // Classe ArticleService
-    // Méthode creerAriticle
+public class ArticleService implements Serializable{
+    // Méthode afficherAriticle
+    public void afficherArticle(Article article){
+        System.out.println(article.getNumero()+ " : "+ article.getLibelle());
+    }
+}

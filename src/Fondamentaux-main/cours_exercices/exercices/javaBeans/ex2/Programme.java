@@ -12,5 +12,11 @@ package cours_exercices.exercices.javaBeans.ex2;
 // Classe principale
 public class Programme {
     public static void main(String[] args) {
+        Article art = new Article(1,"ceci est un article");
+        Article art2 =new Article();
+        ArticleService service = new ArticleService();
+        
+        service.afficherArticle(art);
+        service.afficherArticle(art2);
     }
 }

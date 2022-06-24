@@ -13,8 +13,8 @@ import java.io.Serializable;
 
 // JavaBean Commande
 public class Commande implements Serializable{
-    // Propriétés
     private static final long serialVersionUID= -75L; //N° de série du javaBean, correspond à un identifiant de classe
+    // Propriétés
     private final int id;
     private int clientID;
     private String libelle;
