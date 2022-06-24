@@ -75,7 +75,7 @@ class CompteBanquaire extends Compte{
 // Classe principale
 public class Heritage {
     public static void main(String[] args) {
-        CompteBanquaire cb = new CompteBanquaire(100.0,"Victor", "Banque du sperme");
+        CompteBanquaire cb = new CompteBanquaire(100.0,"Victor", "Kiss Kiss Banque Banque");
         Compte c = new Compte(500.0,"Victor");
         System.out.println(cb.getElements());
         System.out.println(c.getElements());
