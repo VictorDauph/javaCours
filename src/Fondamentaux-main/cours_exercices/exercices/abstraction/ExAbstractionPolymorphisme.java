@@ -20,15 +20,59 @@
 package cours_exercices.exercices.abstraction;
 
 // Classe abstraite
+abstract class AbstractedClass {
+    abstract public String getCommentCaVa();
+    abstract public String getLangue();
+    public void traduireCommentCaVa(){
+        System.out.println("En "+ getLangue()+" on dit : "+ getCommentCaVa());
+    };
+}
 
 // Classe Anglais
+class Anglais extends AbstractedClass{
+    
+    @Override public String getLangue(){
+        return "Anglais";
+    }
+    
+    @Override public String getCommentCaVa(){
+        return "How do you do?";
+    }
+}
 
 // Classe Italien
+class Italien extends AbstractedClass{
+    
+    @Override public String getLangue(){
+        return "Italien";
+    }
+    
+    @Override public String getCommentCaVa(){
+        return "Sto scoregiando";
+    }
+}
 
 // Classe Espagnol
+class Espagnol extends AbstractedClass{
+    
+    @Override public String getLangue(){
+        return "Espagnol";
+    }
+    
+    @Override public String getCommentCaVa(){
+        return "Que tal hombre?";
+    }
+}
 
 // Classe principale
 public class ExAbstractionPolymorphisme {
         public static void main(String[] args) {
+            AbstractedClass anglais = new Anglais();
+            AbstractedClass espagnol = new Espagnol();
+            AbstractedClass italien = new Italien();
+            anglais.traduireCommentCaVa();
+            espagnol.traduireCommentCaVa();
+            italien.traduireCommentCaVa();
+            
     }
 }
