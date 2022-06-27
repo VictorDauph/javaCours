@@ -17,7 +17,8 @@ interface IRadio{
 // Interface reveil
 interface IReveil{
     void setHeure(String heure);
-    // Méthode default nommée start
+    
+    // Méthode default nommée start. Default permet de définir une fonction dans une interface.
     default void start(){
         System.out.println("Sonne comme un reveil");
     }
