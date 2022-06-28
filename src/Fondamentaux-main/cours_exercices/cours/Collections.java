@@ -7,7 +7,10 @@ package cours_exercices.cours;
 // Classe principale
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Collections {
     public static void main(String[] args) {
@@ -65,25 +68,49 @@ public class Collections {
 	
 	/// SET
 	// Définition d'une collection Set
-	
+	Set<String> monSet= new HashSet<>();
+        
         // Charge monAutreListe de type List dans monSet de type Set
-	
+        System.out.println("Liste Avant Set : ");
+        for(String elem : maListe2){
+            System.out.println("Elements : "+elem);
+        }
+        
+        System.out.println("Set : ");
+	monSet.addAll(maListe2);
+                
 	// Affichage du Set, on s'aperçoit qu'il n'y a plus de doublons
+        for(String elem : monSet){
+            System.out.println("Elements : "+elem);
+        }
 	
 	// Tableau de String chargé
+        String[] valeurs = {"un","deux","trois"};
 	
 	// Conversion du tableau en liste de type List
+        List<String> maNouvelleListe= Arrays.asList(valeurs); 
 	
 	// Affichage de la nouvelle liste
-	
+        System.out.println(maNouvelleListe);
+        
 	// Création d'une liste de type List 
+        List<Integer> listInteger = Arrays.asList(3, 9, 1, 4, 7, 2, 5, 3, 8, 9, 1, 3, 8 ,6);
+        System.out.println("listInteger : "+ listInteger);
 	
 	// Conversion en Set d'une liste d'int de Type List, il n'y a plus de doublons
-	
+	Set<Integer> setInteger = new HashSet<>(listInteger);
+        System.out.println("set integer : "+ setInteger);
+        
 	// Ajout de la valeur 5, mais elle existe déjà
-	
+	setInteger.add(5);
+        System.out.println("setInteger après ajout de la valeur 5 : "+ setInteger);
+        
 	// Création d'une liste de type List 
-	
+	List<String> listeString = Arrays.asList("toto","abc","xyz","dede","abc");
+        System.out.println("listeString : "+ listeString );
+        
 	// Conversion en Set d'une liste de String de type List, il n'y a plus de doublons
+        Set<String> setString = new HashSet<>(listeString);
+        System.out.println("setSrtring : "+ setString);
     }
 }
